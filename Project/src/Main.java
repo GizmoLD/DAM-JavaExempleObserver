@@ -7,6 +7,52 @@ public class Main {
         List<Poligon> llista = new ArrayList<>();
         List<Poligon> llistaCopy = new ArrayList<>();
 
+        List<Electrodomestic> llistaElectrodomestics = new ArrayList<>();
+        List<Electrodomestic> llistaElectrodomesticsCopy = new ArrayList<>();
+
+        List<Forn> llistaForn = new ArrayList<Forn>();
+        List<Nevera> llistaNevera = new ArrayList<Nevera>();
+        List<Rentadora> llistaRentadora = new ArrayList<Rentadora>();
+
+        Forn forn1 = new Forn();
+        forn1.nom = "Forn1";
+        forn1.preu = 20;
+        forn1.marca = "Sony";
+        forn1.eficiencia = "A";
+        llistaForn.add(0, forn1);
+
+        Forn forn2 = new Forn();
+        forn2.nom = "Forn2";
+        forn2.preu = 10;
+        forn2.marca = "Panasonic";
+        forn2.eficiencia = "B";
+        llistaForn.add(1, forn2);
+
+        Nevera nevera1 = new Nevera();
+        nevera1.nom = "Nevera1";
+        nevera1.preu = 20;
+        nevera1.marca = "";
+        llistaNevera.add(0, nevera1);
+
+        Nevera nevera2 = new Nevera();
+        nevera2.nom = "Nevera2";
+        nevera2.preu = 20;
+        llistaNevera.add(1, nevera2);
+
+        Rentadora rentadora1 = new Rentadora();
+        rentadora1.nom = "Rentadora1";
+        llistaRentadora.add(0, rentadora1);
+
+        Rentadora rentadora2 = new Rentadora();
+        rentadora2.nom = "Rentadora2";
+        llistaRentadora.add(0, rentadora2);
+        
+        llistaElectrodomesticsCopy.add(0, rentadora1.clone());
+        llistaElectrodomesticsCopy.add(1, forn1.clone());
+        llistaElectrodomesticsCopy.add(1, nevera1.clone());
+
+
+
         Cercle circle = new Cercle();
         circle.x = 10;
         circle.y = 20;
@@ -57,3 +103,4 @@ public class Main {
         }
     }
 }
+//s s donde esta

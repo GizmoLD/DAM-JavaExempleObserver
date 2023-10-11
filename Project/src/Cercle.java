@@ -1,5 +1,5 @@
 public class Cercle extends Poligon {
-    
+
     public int radius;
 
     public Cercle() {
